@@ -1,0 +1,203 @@
+/* reseteo */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*  CUERPO DE PAGINA */
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 1fr 0.1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
+    width: 100%;
+    background-color: lavender;
+    font-family: 'Dancing Script', cursive;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+/* EMCABEZADO */
+header {
+    grid-area: header;
+    width: 100%;
+}
+
+h1 a {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* MENU DE ENCABEZADO */
+
+.menuPrincipal a {
+    text-decoration: none;
+    color: black;
+}
+
+.menuPrincipal ul {
+    list-style: none;
+    text-align: start;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menuPrincipal li {
+    font-family: 'Dancing Script', cursive;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* IMAGEN PRINCIPAL Y MENU DE PRODUCTOS */
+.imagenPrincipal {
+    background-image: url(../multimedia/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+}
+
+.imagenPrincipal a {
+    text-decoration: none;
+    color: black
+}
+
+.imagenPrincipal ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imagenPrincipal li {
+
+    padding: 20px;
+    font-size: 20px;
+}
+
+.imagenProductos {
+    width: 300px;
+    height: 233px;
+    padding: 40px;
+}
+
+div a:hover {
+    color: white;
+}
+
+.video iframe {
+    width: 50%;
+}
+
+/* pagina de guia de tallas */
+.mainTallas {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: rgba(240, 230, 140, 0.781);
+}
+
+.textoTallas {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+
+/* PAGINA DE CONTACTO */
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PIE DE PAGINA */
+footer {
+    text-align: center;
+    background-color: goldenrod;
+    grid-area: footer;
+    margin-top: 25px;
+}
+
+@media screen and (max-width : 768px) {
+    .menuPrincipal {
+        font-size: 10px;
+    }
+
+    .imagenPrincipal ul {
+        background-color: rgba(0, 0, 0, 0.233);
+        padding: 1px;
+    }
+
+    .imagenPrincipal a {
+        color: white;
+        font-size: 1.25rem;
+    }
+}
+
+
+@media screen and (max-width : 500px) {
+
+    h1 a {
+        font-size: 30px;
+    }
+
+    .imagenPrincipal a {
+        font-size: 0.9rem;
+    }
+
+    .menuPrincipal li {
+        font-size: 1rem;
+    }
+
+    .mensaje {
+        font-size: 0.7rem;
+    }
+
+    .galeriaImagenes {
+        width: 100%;
+    }
+
+    .video {
+        display: none;
+    }
+
+
+    .mainTallas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenTallas img {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
