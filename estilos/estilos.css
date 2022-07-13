@@ -20,10 +20,7 @@ body {
     font-family: 'Dancing Script', cursive;  
 }
 
-main {
-    grid-area: main;
-    text-align: center;
-}
+
 
 /* EMCABEZADO */
 header {
@@ -58,7 +55,6 @@ h2 {
 .menuPrincipal a {
     text-decoration: none;
     color: black;
- 
 }
 
 .menuPrincipal ul {
@@ -77,6 +73,11 @@ h2 {
 }
 
 /* IMAGEN PRINCIPAL Y MENU DE PRODUCTOS */
+
+main {
+    grid-area: main;
+    text-align: center;
+}
 .imagenPrincipal {
     background-image: url(../multimedia/portada.jpg);
     background-repeat: no-repeat;
@@ -132,8 +133,8 @@ div a:hover {
 
 .textoTallas {
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-family: cursive;
+    font-size: 1.5rem;
     color: black;
 }
 
@@ -143,6 +144,7 @@ label {
     flex-direction: column;
 }
 
+
 /* PIE DE PAGINA */
 footer {
     text-align: center;
@@ -150,28 +152,39 @@ footer {
     grid-area: footer;
     margin-top: 25px;
 }
+/* pagina de preguntas */
+.accordion-body {
+    background-color: rgba(240, 230, 140, 0.781);
+}
 
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
 @media screen and (max-width : 768px) {
     .menuPrincipal {
         font-size: 10px;
     }
     .imagenPrincipal ul {
-        background-color: rgba(0, 0, 0, 0.233);
+    
         padding: 1px;
         flex-direction: column;
-        margin-top: 50px;
-        font-weight: 500;
+        line-height: 75px;
     }
 
     .imagenPrincipal a {
         color: white;
         font-size: 2.0rem;
     }
+
+    .textoTallas{
+       font-size: 1rem;
+    }
 }
 
 
 @media screen and (max-width : 500px) {
-
+    
     h1 a {
         font-size: 30px;
     }
@@ -189,6 +202,7 @@ footer {
 
     .menuPrincipal li {
         font-size: 1rem;
+        
     }
 
     .mensaje {

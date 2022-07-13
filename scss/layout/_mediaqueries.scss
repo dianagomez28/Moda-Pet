@@ -1,0 +1,33 @@
+@media screen and (max-width : 768px) {
+    .menuPrincipal {
+        font-size: 1.2rem;
+    }
+
+    .imagenPrincipal {
+        ul {
+            padding: 1px;
+            flex-direction: column;
+            line-height: 40px;
+
+            li {
+                a {
+                    font-size: 2.0rem;
+                    color: $colorMenuMovil;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 500px) {
+
+    #navbarSupportedContent {
+        background-color:$fondoMenuMovil;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

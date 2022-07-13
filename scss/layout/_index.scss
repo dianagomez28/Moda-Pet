@@ -1,0 +1,46 @@
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+
+.imagenPrincipal {
+    background-image: url(../multimedia/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    background-position: center;
+    font-size: 1.5rem;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        li{
+            padding: 20px;
+            font-size: 1.4rem;
+            a {
+                text-decoration: none;
+                color:$colorMenuPc; 
+                &:hover{
+                    color: $hover;
+                }
+                
+            }
+        }
+    }   
+}
+
+.imagenProductos {
+    width: 300px;
+    height: 233px;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+    
+.video iframe {
+    width: 50%;
+}
