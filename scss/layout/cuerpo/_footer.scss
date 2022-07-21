@@ -1,6 +1,5 @@
 footer {
-    text-align: center;
-    background-color: goldenrod;
     grid-area: footer;
-    margin-top: 25px;
+    text-align: map-get($estilos, alineacion);
+    background-color:map-get($estilos, color);
 }

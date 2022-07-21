@@ -37,8 +37,8 @@ main {
     padding: 40px;
 }
 
-h2 {
-    font-size: 1.7rem;
+.mensaje {
+    @extend .textoTallas;
 }
     
 .video iframe {

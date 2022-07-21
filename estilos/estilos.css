@@ -150,7 +150,7 @@ footer {
     text-align: center;
     background-color: goldenrod;
     grid-area: footer;
-    margin-top: 25px;
+
 }
 /* pagina de preguntas */
 .accordion-body {
@@ -178,7 +178,7 @@ footer {
     }
 
     .textoTallas{
-       font-size: 1rem;
+        font-size: 1rem;
     }
 }
 

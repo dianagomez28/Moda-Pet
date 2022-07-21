@@ -1,2 +1,20 @@
+.mainTallas {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    font-size: 3rem;
+}
 
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    h2{
+        font-size: 2rem;
+    }
+    
+}
 
+.textoTallas {
+   @extend .textoTallas
+}
