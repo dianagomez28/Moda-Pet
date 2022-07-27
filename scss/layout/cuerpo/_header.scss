@@ -24,23 +24,25 @@ header {
 }
 
 .menuPrincipal {
+
     ul {
-        list-style: none;
-        text-align: start;
-        padding: 5px;
-        display: flex;
-        flex-direction: row;
+
+
 
         li {
             font-family: $letraGeneral;
             padding: 8px;
             font-size: 20px;
             font-weight: bolder;
-
             a {
                 text-decoration: none;
-                color:$colorMenuPc;
             }
         }
     }
+
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #515151;
+    
 }

@@ -1,12 +1,12 @@
 @media screen and (max-width : 768px) {
+
     .menuPrincipal {
         font-size: 1.2rem;
     }
 
     .imagenPrincipal {
         ul {
-            padding: 1px;
-            flex-direction: column;
+            padding: 20px;
             line-height: 40px;
 
             li {
@@ -22,8 +22,11 @@
 
 @media screen and (max-width : 500px) {
 
+    
+
     #navbarSupportedContent {
         background-color:$fondoMenuMovil;
+        
 
         ul {
             display: flex;
@@ -32,6 +35,13 @@
         }
     }
     
+    .imagenPrincipal{
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
     
     .video {
         display: none;
@@ -46,4 +56,15 @@
     .imagenTallas img {
         width: 100%;
     }
+    
+    .accordion{
+        width: 90%;
+    }
+    .imagenProductos {
+        width: 300px;
+        height: 233px;
+        padding: 40px;
+    }
+
+    
 }
