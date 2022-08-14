@@ -1,20 +1,24 @@
 .mainTallas {
-    display: flex;
-    flex-direction: row;
-    padding: 15px;
-    font-size: 3rem;
-}
+    background-color: rgba(221, 160, 221, 0.568);
+    border-radius: 7px;
 
-.descripcion {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    h2{
-        font-size: 2rem;
+    h2 {
+        line-height: 2;
     }
-    
-}
 
-.textoTallas {
-   @extend .textoTallas
+    .descripcion {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        background-color: white;
+        border-radius: 7px;
+        margin-top: 12px;
+
+        .textoTallas {
+            font-family: $letraGeneral;
+            font-size: 1.5rem;
+            background-color: lavender;
+            border-radius: 7px;
+        }
+    }
 }

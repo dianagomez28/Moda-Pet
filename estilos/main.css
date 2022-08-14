@@ -1,9 +1,3 @@
-.textoTallas {
-  background-color: rgba(240, 230, 140, 0.781);
-  text-align: center;
-  font-family: cursive;
-  font-size: 1.5rem; }
-
 /* reseteo */
 * {
   padding: 0;
@@ -17,135 +11,183 @@ body {
   grid-template-areas: "header" "main" "footer";
   height: 100vh;
   width: 100%;
-  background-color: white;
   font-family: "roboto"; }
 
 header {
   grid-area: header;
-  width: 100%;
-  height: 120px; }
-  header h1 {
-    font-family: "Dancing Script", cursive;
-    font-size: 50px;
-    font-weight: 1000;
-    text-align: center; }
-    header h1 a {
-      text-decoration: none;
-      color: goldenrod; }
-      header h1 a:hover {
-        color: white; }
+  background-color: lavender;
+  border-radius: 3px; }
+  header .logo {
+    display: flex;
+    justify-content: center; }
+    header .logo img {
+      width: 200px; }
 
 .menuPrincipal ul li {
   font-family: "roboto";
   padding: 8px;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-weight: bolder; }
-  .menuPrincipal ul li a {
-    text-decoration: none; }
-
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
-  color: #515151; }
 
 main {
   grid-area: main;
-  text-align: center; }
+  text-align: center;
+  margin: 20px; }
+
+.imagenPrincipal ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #fcf6bd;
+  border-radius: 7px; }
+  .imagenPrincipal ul li {
+    padding: 20px;
+    font-size: 1.4rem; }
+    .imagenPrincipal ul li a {
+      text-decoration: none;
+      color: black; }
+      .imagenPrincipal ul li a:hover {
+        color: white; }
 
 .ancho {
   width: 95%;
   border-radius: 50px; }
 
 .borde {
-  margin: 30px; }
+  margin-bottom: 15px; }
 
-.imagenPrincipal {
-  font-size: 1.5rem; }
-  .imagenPrincipal ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .imagenPrincipal ul li {
-      padding: 20px;
-      font-size: 1.4rem; }
-      .imagenPrincipal ul li a {
-        text-decoration: none;
-        color: black; }
-        .imagenPrincipal ul li a:hover {
-          color: white; }
+.productosPopulares {
+  background-color: rgba(221, 160, 221, 0.568);
+  border-radius: 7px; }
+  .productosPopulares h2 {
+    line-height: 3; }
 
-.imagenProductos {
-  width: 500px;
-  height: 400px;
-  padding: 40px; }
+.margen {
+  margin-bottom: 50px; }
+
+.sombreado {
+  border-radius: 7px; }
+
+.card {
+  border: 0px; }
 
 .video iframe {
+  border-radius: 20px;
   width: 50%; }
+
+.card {
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+.btn-primary {
+  color: black;
+  background-color: rgba(221, 160, 221, 0.568);
+  border-color: goldenrod; }
 
 .mainTallas {
-  display: flex;
-  flex-direction: row;
-  padding: 15px;
-  font-size: 3rem; }
+  background-color: rgba(221, 160, 221, 0.568);
+  border-radius: 7px; }
+  .mainTallas h2 {
+    line-height: 2; }
+  .mainTallas .descripcion {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 12px; }
+    .mainTallas .descripcion .textoTallas {
+      font-family: "roboto";
+      font-size: 1.5rem;
+      background-color: lavender;
+      border-radius: 7px; }
 
-.descripcion {
-  display: flex;
-  flex-direction: column;
-  padding: 15px; }
-  .descripcion h2 {
-    font-size: 2rem; }
-
-header {
-  z-index: 2; }
-
-.accordion {
-  width: 50%; }
-  .accordion .accordion-body {
-    background-color: rgba(240, 230, 140, 0.781); }
-
-.accordion-button:not(.collapsed) {
-  color: black;
-  background-color: white; }
+.mainPreguntas {
+  background-size: 610px 1240px; }
+  .mainPreguntas .accordion .accordion-body {
+    background-color: rgba(221, 160, 221, 0.568); }
+  .mainPreguntas .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white; }
+  .mainPreguntas .accordion-button {
+    background-color: lavender; }
+  .mainPreguntas .preguntasF {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px; }
 
 label {
   display: flex;
   flex-direction: column; }
 
+.mainContacto {
+  background-image: url(../multimedia/mm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  background-position: 20%; }
+  .mainContacto .textoContacto {
+    font-size: 1.3rem; }
+  .mainContacto .formulario {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    opacity: 0.5; }
+  .mainContacto .cuadroTexto {
+    width: 250px;
+    border-radius: 5px;
+    opacity: 0.8; }
+  .mainContacto .botones {
+    border-radius: 5px; }
+
 footer {
   grid-area: footer;
   text-align: center;
-  background-color: goldenrod;
-  margin-top: 12px; }
+  background-color: #fcf6bd; }
+  footer .redes {
+    margin-top: 15px; }
 
 @media screen and (max-width: 768px) {
-  .menuPrincipal {
-    font-size: 1.2rem; }
-  .imagenPrincipal ul {
-    padding: 20px;
-    line-height: 40px; }
-    .imagenPrincipal ul li a {
-      font-size: 2.0rem;
-      color: black; } }
+  .preguntasF {
+    display: none; }
+  .mainContacto {
+    background-position: 35%; } }
 
 @media screen and (max-width: 500px) {
-  #navbarSupportedContent {
-    background-color: rgba(218, 165, 32, 0.884); }
-    #navbarSupportedContent ul {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start; }
   .imagenPrincipal ul {
     display: flex;
     flex-direction: column; }
+    .imagenPrincipal ul li {
+      padding: 5px;
+      text-align: center;
+      margin-right: 30px; }
+  .borde {
+    margin-bottom: none; }
+    .borde .ancho {
+      width: 280px;
+      height: 210px;
+      border-radius: 25px; }
   .video {
     display: none; }
   .mainTallas {
     display: flex;
     flex-direction: column; }
-  .imagenTallas img {
-    width: 100%; }
-  .accordion {
-    width: 90%; }
+    .mainTallas .imagenTallas img {
+      width: 100%; }
   .imagenProductos {
     width: 300px;
     height: 233px;
-    padding: 40px; } }
+    padding: 40px; }
+  .mainContacto {
+    background-position: 40%; } }

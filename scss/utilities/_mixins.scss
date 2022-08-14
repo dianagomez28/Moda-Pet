@@ -1,17 +1,11 @@
 $estilos:(
     alineacion: center,
-    color: goldenrod,
+    color: rgb(252, 246, 189),
 );
 
 
 
-.textoTallas {
-    background-color: rgba(240, 230, 140, 0.781);
-    text-align: center;
-    font-family: cursive;
-    font-size: 1.5rem;
-    
-}
+
 
 @mixin gridBase {
     display: grid;
@@ -23,7 +17,6 @@ $estilos:(
         "footer";
     height: 100vh;
     width: 100%;
-    background-color:$colorBody;
     font-family: $letraGeneral;  
 }
 
