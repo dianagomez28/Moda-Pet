@@ -28,11 +28,39 @@ header {
   padding: 8px;
   font-size: 1.5rem;
   font-weight: bolder; }
+  .menuPrincipal ul li .nav-link {
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; }
+  .menuPrincipal ul li .nav-link::after {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    transition: transform 0.5s ease; }
+  .menuPrincipal ul li .nav-link:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0 #f6ed9f, -10px 10px 25px 0 rgba(219, 145, 219, 0.568); }
+  .menuPrincipal ul li .nav-link:hover::after {
+    transform: rotate(150deg); }
 
 main {
   grid-area: main;
   text-align: center;
   margin: 20px; }
+  main .card {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default; }
+  main .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%); }
 
 .imagenPrincipal ul {
   list-style: none;
@@ -75,19 +103,6 @@ main {
 .video iframe {
   border-radius: 20px;
   width: 50%; }
-
-.card {
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-  transition: all 400ms ease-out;
-  cursor: default; }
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%); }
 
 .btn-primary {
   color: black;
@@ -136,6 +151,8 @@ label {
   background-size: cover;
   border-radius: 7px;
   background-position: 20%; }
+  .mainContacto h2 {
+    line-height: 2; }
   .mainContacto .textoContacto {
     font-size: 1.3rem; }
   .mainContacto .formulario {
@@ -159,6 +176,8 @@ footer {
     margin-top: 15px; }
 
 @media screen and (max-width: 768px) {
+  .menuPrincipal ul li {
+    font-size: 1.2rem; }
   .preguntasF {
     display: none; }
   .mainContacto {

@@ -2,14 +2,20 @@ header {
     grid-area: header;
     background-color: lavender;
     border-radius: 3px;
-    .logo{
+
+    
+
+
+    .logo {
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             width: 200px;
         }
     }
 }
+
 .menuPrincipal {
     ul {
         li {
@@ -17,8 +23,29 @@ header {
             padding: 8px;
             font-size: 1.5rem;
             font-weight: bolder;
+            .nav-link {
+                border-radius: 20px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                overflow: hidden;
+            }
+            .nav-link::after {
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top: -50px;
+                left: -100px;
+                z-index: -1;
+                transition: transform 0.5s ease;
+            }
+            .nav-link:hover {
+                transform: translate(0, -6px);
+                box-shadow: 10px -10px 25px 0 rgb(246, 237, 159), -10px 10px 25px 0 rgba(219, 145, 219, 0.568);            
+            }
+            .nav-link:hover::after {
+                transform: rotate(150deg);
+                
+            }
         }
     }
 
 }
-

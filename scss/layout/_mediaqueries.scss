@@ -1,12 +1,17 @@
 @media screen and (max-width : 768px) {
+    .menuPrincipal {
+        ul {
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
     .preguntasF {
         display: none;
     }
-
     .mainContacto {
         background-position: 35%;
     }
-
 }
 
 
